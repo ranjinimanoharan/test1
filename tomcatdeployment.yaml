@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tomcat
+  name: tomcat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tomcat
+  template:
+    metadata:
+      labels:
+        app: tomcat
+    spec:
+      containers:
+      - image: ranjinimanoharan/assignment:app1
+        name: tomcat
+        ports:
+        - containerPort: 8080
+          hostPort: 8090
+          name: tomcat

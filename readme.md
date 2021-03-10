@@ -108,9 +108,9 @@ spec:
           name: nginx
 ```
 
-Now, we have the nginx server up and running inside a container. Here, `hostport` is used to expose the container to the outside world. `hostport`  exposes the container to the external network at *hostIP:hostPort*, where the `hostIP` is the IP address of the Kubernetes node where the container is running and the `hostPort` is the port requested by the user. 
+Now, we have the nginx server up and running inside a container. Here, `hostport` is used to expose the container to the outside world. 
 
-To create kubernetes deployment:
+Create kubernetes deployment using:
 ```
 Kubectl apply -f tomcatdeployment.yaml
 ```

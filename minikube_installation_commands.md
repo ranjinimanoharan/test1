@@ -30,17 +30,17 @@ minikube version
 
 We have now successfully installed Minikube!
 
-**Become a root user:
+**Become a root user:**
 
 sudo -i
 
-**start Minikube
+**start Minikube**
 
 minikube start --vm-driver=none
 
 apt install conntrack
 Note: kubernetes 1.20.0 and above need conntrack installed
 
-**check status
+**check status**
 
 minikube status

@@ -1,4 +1,4 @@
-**Minikube Prerequisite
+**Minikube Prerequisite**
 
 - 2 CPUs or more
 - 2GB of free memory

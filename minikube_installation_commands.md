@@ -36,10 +36,11 @@ sudo -i
 
 **start Minikube**
 
-minikube start --vm-driver=none
-
 apt install conntrack
+
 Note: kubernetes 1.20.0 and above need conntrack installed
+
+minikube start --vm-driver=none
 
 **check status**
 

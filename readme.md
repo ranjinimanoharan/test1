@@ -20,12 +20,12 @@ CMD [“catalina.sh”, “run”]
 ```
 For building docker image:
 ```
-docker build -t ranjinimanoharan\assignment:app1
+docker build -t ranjinimanoharan\assignment:app1 .
 ```
 Once docker image is built, push it to docker hub registry:
 
 ```
-docker login #To login to the docker hub
+docker login #To login to the docker hub, provide username & password when prompted 
 docker push ranjinimanoharan/assignment:app1
 ```
 Now, docker image is ready for our sample app deployment. 

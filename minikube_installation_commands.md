@@ -17,6 +17,7 @@ sudo apt-get install docker.io -y
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 
 **Check Minikube Version**
+
 minikube version
 
 We have now successfully installed Minikube!
@@ -24,7 +25,12 @@ We have now successfully installed Minikube!
 Become a root user:
 
 sudo -i
+
 start Minikube
+
 minikube start --vm-driver=none
+
 apt install conntrack
+Note: kubernetes 1.20.0 and above need conntrack installed
+
 minikube status

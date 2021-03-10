@@ -1,4 +1,3 @@
-## Task1
 ## Task details
 - Based on Minikube
 - Deploy tomcat v8 to minikube

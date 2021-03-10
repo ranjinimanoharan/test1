@@ -37,7 +37,9 @@ minikube status
 kubectl config-view
 ```
 minikube runs a single-node Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) and VMs. It is suitable only for development and testing purpose.
+
 *Kubernetes deployment file*
+
 **tomcatdeployment.yaml**
 ```
 apiVersion: apps/v1

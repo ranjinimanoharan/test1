@@ -6,8 +6,10 @@
 - Bind tomcat service to hostport 8090
 
 **Create Docker image**
+
 First we need to a docker image using the sample.war file provided in the assignment:
 https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/
+
 **Dockerfile**
 ```
 FROM tomcat:8.0-alpine

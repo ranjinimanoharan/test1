@@ -12,7 +12,9 @@ minikube status
 kubectl config-view
 ```
 minikube runs a single-node Kubernetes cluster on personal computer (including Windows, macOS and Linux PCs) and VMs. It is suitable only for development and testing purpose.
+
 *Kubernetes deployment file*
+
 **nginxdeployment.yaml**
 ```
 apiVersion: apps/v1
@@ -39,6 +41,7 @@ spec:
           hostPort: 8080
           name: nginx
 ```
+
 Now, we have the nginx server up and running inside a container. Here, `hostport` is used to expose the container to the outside world. `hostport`  exposes the container to the external network at *hostIP:hostPort*, where the `hostIP` is the IP address of the Kubernetes node where the container is running and the `hostPort` is the port requested by the user. 
 
 To create kubernetes deployment:

@@ -12,8 +12,8 @@ https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/
 
 **Dockerfile**
 ```
-FROM tomcat:8.0-alpine
-LABEL maintainer=”deepak@softwareyoga.com”
+FROM tomcat:jdk8-openjdk-slim-buster
+LABEL maintainer="chinmayaranju@gmail.com"
 ADD sample.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD [“catalina.sh”, “run”]

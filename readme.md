@@ -66,7 +66,7 @@ spec:
           hostPort: 8090
           name: tomcat
 ```
-Here, `hostport` is used to expose the container to the outside world. `hostport`  exposes the container to the external network at <hostIP>:<hostPort>, where the hostIP is the IP address of the Kubernetes node where the container is running and the hostPort is the port requested by the user. 
+Here, `hostport` is used to expose the container to the outside world. `hostport`  exposes the container to the external network at *hostIP:hostPort*, where the `hostIP` is the IP address of the Kubernetes node where the container is running and the `hostPort` is the port requested by the user. 
 
 To create kubernetes deployment:
 ```
